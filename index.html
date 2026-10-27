@@ -2,15 +2,37 @@
 <!doctype html>
 <html lang="ru">
 <head>
+<script>
+/* Копия страницы агерис.рф/audit для GitHub Pages.
+   Вне домена агерис.рф счётчики (Яндекс Метрика, UIS, Botfaqtor, Radist) не загружаются,
+   а формы заявки ничего не отправляют. На агерис.рф всё работает как на боевой странице. */
+window.AGERIS_LIVE = /(^|\.)(xn--80aggm3bh\.xn--p1ai|агерис\.рф)$/i.test(location.hostname);
+if (!window.AGERIS_LIVE) {
+	window.ym = window.ym || function () {};
+	document.addEventListener('submit', function (e) {
+		var form = e.target;
+		if (!form.classList || !form.classList.contains('wpcf7-form')) return;
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		var out = form.querySelector('.wpcf7-response-output');
+		if (out) {
+			out.textContent = 'Это копия страницы для просмотра, заявка не отправлена. Оставить заявку можно на агерис.рф/audit.';
+			out.setAttribute('role', 'status');
+			out.removeAttribute('aria-hidden');
+			out.style.cssText += ';display:block;color:#1e1e1e;background:#fff8e6;border:2px solid #f7b62d;border-radius:6px;padding:10px 14px;font-size:14px;line-height:1.4;';
+		}
+	}, true);
+}
+</script>
 <title>Защищаем бизнес от вредителей по стандартам ХАССП</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="https://агерис.рф/wp-content/themes/ageris/assets/css/style.css?ver=1.16">
+<link rel="stylesheet" href="wp-content/themes/ageris/assets/css/style.css?ver=1.16">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
 <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
 <title>Защищаем бизнес от вредителей по стандартам ХАССП | Центр дезинфекции «Агерис»</title>
 
@@ -43,13 +65,14 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=global-styles-inline-css */
 </style>
 
-<link rel='stylesheet' id='contact-form-7-css' href='https://агерис.рф/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.4' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.4' media='all' />
 <link rel="https://api.w.org/" href="https://агерис.рф/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://агерис.рф/wp-json/wp/v2/pages/147" /><!-- UIS -->
-<script async="" src="https://app.comagic.ru/static/cs.min.js?k=ICWycQx6m3NSBe3WlCeDAdAKMTmNhMHC"></script>
+<script>if (window.AGERIS_LIVE) { (function (d) { var s = d.createElement('script'); s.async = true; s.src = 'https://app.comagic.ru/static/cs.min.js?k=ICWycQx6m3NSBe3WlCeDAdAKMTmNhMHC'; d.head.appendChild(s); })(document); }</script>
 <!-- UIS -->
 <script>window._ab_id_=162675</script>
-<script src="https://cdn.botfaqtor.ru/one.js"></script>
+<script>if (window.AGERIS_LIVE) document.write('<script src="https://cdn.botfaqtor.ru/one.js"><\/script>');</script>
 <script>
+if (window.AGERIS_LIVE) {
  !function(r,t,e,s,a,n,c){r[a]=r[a]||function(){(r[a].a=r[a].a||[]).push(arguments)},r[a].l=1
     *new Date;for(var i=0;i<document.scripts.length;i++)if(document.scripts[i].src===s)return
     ;n=t.createElement(e),c=t.getElementsByTagName(e)[0],n.async=1,n.src=s,c.parentNode
@@ -62,6 +85,7 @@ radist_tracker({
       max_enabled: true,
       vk_enabled: true
 });
+}
 </script>
 </head><body class="wp-singular page-template page-template-page-audit page-template-page-audit-php page page-id-147 wp-theme-ageris">
 
@@ -69,15 +93,15 @@ radist_tracker({
 	<div class="container flex items-center justify-between">
 		<div class="left-column">
 			<div class="brand">
-				<a href="#"><img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/ageris.png?ver=2" alt=""></a>
+				<a href="#"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.png?ver=2" alt=""></a>
 			</div>
 		</div>
 		<div class="right-column flex items-center justify-between">
-						<div class="city flex items-center gap-xs hidden" data-city="ashbern">
+						<div class="city flex items-center gap-xs hidden" data-city="moscow">
 				<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.49967 11.9167C6.49967 11.9167 10.2913 8.50417 10.2913 5.41667C10.2913 4.91874 10.1933 4.42569 10.0027 3.96566C9.81217 3.50563 9.53288 3.08764 9.18079 2.73555C8.8287 2.38346 8.41071 2.10417 7.95068 1.91362C7.49066 1.72307 6.9976 1.625 6.49967 1.625C6.00175 1.625 5.50869 1.72307 5.04867 1.91362C4.58864 2.10417 4.17065 2.38346 3.81856 2.73555C3.46647 3.08764 3.18718 3.50563 2.99663 3.96566C2.80608 4.42569 2.70801 4.91874 2.70801 5.41667C2.70801 8.50417 6.49967 11.9167 6.49967 11.9167Z" stroke="#333333" stroke-opacity="0.5" stroke-width="1.08333" stroke-linejoin="round"/><path d="M6.49967 6.77083C7.24756 6.77083 7.85384 6.16455 7.85384 5.41667C7.85384 4.66878 7.24756 4.0625 6.49967 4.0625C5.75179 4.0625 5.14551 4.66878 5.14551 5.41667C5.14551 6.16455 5.75179 6.77083 6.49967 6.77083Z" stroke="#333333" stroke-opacity="0.5" stroke-width="1.08333"/></svg>
-				<span class="city-name">Ашберн</span>
+				<span class="city-name">Москва</span>
 			    				    <div class="confirm-city">
-				        <p>Ваш город <span class="city-info">Ашберн</span>?</p>
+				        <p>Ваш город <span class="city-info">Москва</span>?</p>
 				        <div class="confirm-city_btn">
 				            <button type="button" class="blue-button">Все верно</button>
 				            <button type="button" class="base-button">Сменить город</button>
@@ -97,10 +121,10 @@ radist_tracker({
 			</nav>
 			<div class="header-social flex justify-between gap-xs hidden">
 				<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-					<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+					<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
 				</a>
 				<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-					<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+					<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
 				</a>
 			</div>
 			<div class="telephone">
@@ -184,11 +208,11 @@ radist_tracker({
 					</div>
 				</div>
 				<!-- <div class="grid-item mt-auto hidden hidden-sm hidden-md">
-					<img class="img-responsive ml-auto" src="https://агерис.рф/wp-content/themes/ageris/assets/img/bg/hero.png" alt="">
+					<img class="img-responsive ml-auto" src="wp-content/themes/ageris/assets/img/bg/hero.png" alt="">
 				</div> -->
 				<picture class="hidden hidden-sm">
-					<source media="(max-width: 575px)" srcset="https://агерис.рф/wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" type="image/jpeg">
-					<img src="https://агерис.рф/wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" alt="" class="" loading="lazy">
+					<source media="(max-width: 575px)" srcset="wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" type="image/jpeg">
+					<img src="wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" alt="" class="" loading="lazy">
 				</picture>
 			</div>
 		</div>
@@ -232,8 +256,8 @@ radist_tracker({
 					</div>
 				</div>
 				<div class="grid-item">
-					<img class="img-responsive ipm-rotate" src="https://агерис.рф/wp-content/themes/ageris/assets/img/bg/ipm.png" alt="">
-					<img class="img-responsive ipm-rotate__arrow" src="https://агерис.рф/wp-content/themes/ageris/assets/img/bg/ipm-arrow.png" alt="">
+					<img class="img-responsive ipm-rotate" src="wp-content/themes/ageris/assets/img/bg/ipm.png" alt="">
+					<img class="img-responsive ipm-rotate__arrow" src="wp-content/themes/ageris/assets/img/bg/ipm-arrow.png" alt="">
 					<div class="container-ipm">
 						<div class="ipm-grade flex flex-row items-center justify-center gap-xs">
 							<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-grade"></use></svg>
@@ -275,7 +299,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-1.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Пищевое производство</p>
@@ -291,7 +315,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-2.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Склады и логистика</p>
@@ -306,7 +330,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-3.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Хорека</p>
@@ -321,7 +345,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-4.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Гостиницы</p>
@@ -336,7 +360,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-5.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-5.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Ритейл</p>
@@ -351,7 +375,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-6.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-6.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Элеваторы и мукомолье</p>
@@ -377,7 +401,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-1.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Мышевидные грызуны <span>Rattus norvegicus · Mus musculus</span></p>
@@ -395,7 +419,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-2.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Тараканы <span>Blattella germanica · Blatta orientalis</span></p>
@@ -413,7 +437,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-3.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Вредители запасов <span>Sitophilus · Tribolium · Plodia interpunctella</span></p>
@@ -431,7 +455,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-4.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Постельные клопы <span>Cimex lectularius</span></p>
@@ -449,7 +473,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-5.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-5.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Летающие насекомые <span>Musca domestica · Drosophila spp.</span></p>
@@ -467,7 +491,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/objects/object-6.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-6.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Синантропные птицы <span>Columba livia f. urbana</span></p>
@@ -505,14 +529,14 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/implementation/implementation-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-1.jpg" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/implementation/implementation-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-2.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -537,14 +561,14 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/implementation/implementation-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-3.jpg" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/implementation/implementation-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-4.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -680,7 +704,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-7.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-7.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Снижение активности грызунов на 97% за 3 месяца<br>Мясокомбинат 4 200 м²</p>
@@ -694,7 +718,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/specifics/specific-8.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-8.jpg" alt="">
 						</div>
 						<div class="card-desc">
 							<p>Нулевые жалобы на клопов 18 месяцев подряд<br>Сеть отелей (3★–5★)</p>
@@ -859,10 +883,10 @@ radist_tracker({
 							</div>
 							<div class="header-social flex justify-between gap-xs">
 								<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-									<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
 								</a>
 								<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-									<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
 								</a>
 							</div>
 						</div>
@@ -913,52 +937,52 @@ radist_tracker({
 <footer class="footer">
 	<div class="container">
 		<div class="widget title">
-			<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/footer-logo.png" alt="">
+			<img class="img-responsive" src="wp-content/themes/ageris/assets/img/footer-logo.png" alt="">
 		</div>
 		<div class="grid">
 			<div class="widget">
 				<h3>Наши услуги</h3>
 				<ul class="flex flex-col gap-md">
-					<li><a href="/services/dezinsektsiya/">Услуги дезинсекции</a></li>
-					<li><a href="/services/dezinfektsiya/">Услуги дезинфекции</a></li>
-					<li><a href="/services/deratizatsiya/">Услуги дератизации</a></li>
-					<li><a href="/services/dos-rospotrebnadzor/">Документы для СЭС</a></li>
-					<li><a href="/services/gerbitsidnaya-obrabotka/">Гербицидная обработка</a></li>
-					<li><a href="/services/sesaudit/">СЭС аудит</a></li>
-					<li><a href="/services/pest-control/">Пест-контроль</a></li>
-					<li><a href="/services/chastnym-klientam/">Частным клиентам</a></li>
-					<li><a href="/services/dezodoratsiya/">Услуги дезодорации</a></li>
-					<li><a href="/services/yuridicheskim-klientam/">Юридическим лицам</a></li>
+					<li><a href="https://агерис.рф/services/dezinsektsiya/">Услуги дезинсекции</a></li>
+					<li><a href="https://агерис.рф/services/dezinfektsiya/">Услуги дезинфекции</a></li>
+					<li><a href="https://агерис.рф/services/deratizatsiya/">Услуги дератизации</a></li>
+					<li><a href="https://агерис.рф/services/dos-rospotrebnadzor/">Документы для СЭС</a></li>
+					<li><a href="https://агерис.рф/services/gerbitsidnaya-obrabotka/">Гербицидная обработка</a></li>
+					<li><a href="https://агерис.рф/services/sesaudit/">СЭС аудит</a></li>
+					<li><a href="https://агерис.рф/services/pest-control/">Пест-контроль</a></li>
+					<li><a href="https://агерис.рф/services/chastnym-klientam/">Частным клиентам</a></li>
+					<li><a href="https://агерис.рф/services/dezodoratsiya/">Услуги дезодорации</a></li>
+					<li><a href="https://агерис.рф/services/yuridicheskim-klientam/">Юридическим лицам</a></li>
 				</ul>
 			</div>
 			<div class="widget">
 				<h3>Юридическим лицам</h3>
 				<ul class="flex flex-col gap-md">
-					<li><a class="dark_link" href="/services/dezinsektsiya/">Дезинсекция</a></li>
-					<li><a class="dark_link" href="/services/dezinfektsiya/">Дезинфекция</a></li>
-					<li><a class="dark_link" href="/services/deratizatsiya/">Дератизация</a></li>
-					<li><a class="dark_link" href="/services/dezodoratsiya/">Дезодорация</a></li>
-					<li><a class="dark_link" href="/services/dos-rospotrebnadzor/">Документы для СЭС</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezinsektsiya/">Дезинсекция</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezinfektsiya/">Дезинфекция</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/deratizatsiya/">Дератизация</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezodoratsiya/">Дезодорация</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dos-rospotrebnadzor/">Документы для СЭС</a></li>
 				</ul>
 			</div>
 			<div class="widget">
 				<h3>Дезинфекция</h3>
 				<ul class="flex flex-col gap-md">
-					<li><a class="dark_link" href="/services/dezinfektsiya-avia/">Авиатранспорт</a></li>
-					<li><a class="dark_link" href="/services/dezinfektsiya-transporta/">Автотранспорт</a></li>
-					<li><a class="dark_link" href="/services/dezinfektsiya-zhd-transporta/">Железнодорожный транспорт</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezinfektsiya-avia/">Авиатранспорт</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezinfektsiya-transporta/">Автотранспорт</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/services/dezinfektsiya-zhd-transporta/">Железнодорожный транспорт</a></li>
 				</ul>
 			</div>
 			<div class="widget">
 				<h3>О компании</h3>
 				<ul class="flex flex-col gap-md">
-					<li><a href="/company/index.php">О компании</a></li>
-					<li><a href="/company/licenses/">Сертификаты</a></li>
-					<li><a href="/company/brands/">Препараты</a></li>
-					<li><a href="/company/partners/">Клиенты</a></li>
-					<li><a href="/company/reviews/">Отзывы</a></li>
-					<li><a class="dark_link" href="/blog/">Статьи</a></li>
-					<li><a class="dark_link" href="/sitemap/">Карта сайта</a></li>
+					<li><a href="https://агерис.рф/company/index.php">О компании</a></li>
+					<li><a href="https://агерис.рф/company/licenses/">Сертификаты</a></li>
+					<li><a href="https://агерис.рф/company/brands/">Препараты</a></li>
+					<li><a href="https://агерис.рф/company/partners/">Клиенты</a></li>
+					<li><a href="https://агерис.рф/company/reviews/">Отзывы</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/blog/">Статьи</a></li>
+					<li><a class="dark_link" href="https://агерис.рф/sitemap/">Карта сайта</a></li>
 				</ul>
 			</div>
 			<div class="widget">
@@ -979,17 +1003,17 @@ radist_tracker({
 						</div>
 						<div class="header-social flex justify-between gap-xs">
 							<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-								<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
 							</a>
 							<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-								<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="yellow-btn">
 						<a class="inline-block" href="mailto:info@ageris.ru">info@ageris.ru</a>
 					</div>
-					<img class="img-responsive qr-code" src="https://агерис.рф/wp-content/themes/ageris/assets/img/qr.jpg" alt="">
+					<img class="img-responsive qr-code" src="wp-content/themes/ageris/assets/img/qr.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -1014,7 +1038,7 @@ radist_tracker({
 <div id="menu" style="display: none; border-radius: 0; width: 100%; max-width: 100%;">
 	<div class="flex flex-col">
 		<div class="brand">
-			<a href="/"><img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/ageris.png" alt=""></a>
+			<a href="https://агерис.рф/"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.png" alt=""></a>
 		</div>
 		<nav class="header-nav">
 			<ul class="flex flex-col gap-xs">
@@ -1029,10 +1053,10 @@ radist_tracker({
 		</nav>
 		<div class="header-social flex gap-md">
 			<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-				<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
 			</a>
 			<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-				<img class="img-responsive" src="https://агерис.рф/wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
 			</a>
 		</div>
 		<div class="telephone">
@@ -1093,13 +1117,13 @@ radist_tracker({
             <div class="city-popup__content"></div>
         </div>
     </div>
-    <script id="wp-hooks-js" src="https://агерис.рф/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
-<script id="wp-i18n-js" src="https://агерис.рф/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+    <script id="wp-hooks-js" src="wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-<script id="swv-js" src="https://агерис.рф/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.4"></script>
+<script id="swv-js" src="wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.4"></script>
 <script id="contact-form-7-js-translations">
 ( function( domain, translations ) {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
@@ -1117,13 +1141,13 @@ var wpcf7 = {
 };
 //# sourceURL=contact-form-7-js-before
 </script>
-<script id="contact-form-7-js" src="https://агерис.рф/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.4"></script>
+<script id="contact-form-7-js" src="wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.4"></script>
 <script id="sk-city-js-extra">
 var SK_CITY = {"cities":[{"n":"\u0410\u043f\u0440\u0435\u043b\u0435\u0432\u043a\u0430","s":"aprelevka"},{"n":"\u0411\u0430\u043b\u0430\u0448\u0438\u0445\u0430","s":"balashikha"},{"n":"\u0411\u0435\u043b\u043e\u043e\u0437\u0451\u0440\u0441\u043a\u0438\u0439","s":"beloozerskiy"},{"n":"\u0411\u0440\u043e\u043d\u043d\u0438\u0446\u044b","s":"bronnitsy"},{"n":"\u0412\u0435\u0440\u0435\u044f","s":"vereya"},{"n":"\u0412\u0438\u0434\u043d\u043e\u0435","s":"vidnoe"},{"n":"\u0412\u043e\u043b\u043e\u043a\u043e\u043b\u0430\u043c\u0441\u043a","s":"volokolamsk"},{"n":"\u0412\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u0441\u043a","s":"voskresensk"},{"n":"\u0412\u044b\u0441\u043e\u043a\u043e\u0432\u0441\u043a","s":"vysokovsk"},{"n":"\u0413\u043e\u043b\u0438\u0446\u044b\u043d\u043e","s":"golitsyno"},{"n":"\u0414\u0435\u0434\u043e\u0432\u0441\u043a","s":"dedovsk"},{"n":"\u0414\u0437\u0435\u0440\u0436\u0438\u043d\u0441\u043a\u0438\u0439","s":"dzerzhinskiy"},{"n":"\u0414\u043c\u0438\u0442\u0440\u043e\u0432","s":"dmitrov"},{"n":"\u0414\u043e\u043b\u0433\u043e\u043f\u0440\u0443\u0434\u043d\u044b\u0439","s":"dolgoprudnyy"},{"n":"\u0414\u043e\u043c\u043e\u0434\u0435\u0434\u043e\u0432\u043e","s":"domodedovo"},{"n":"\u0414\u0440\u0435\u0437\u043d\u0430","s":"drezna"},{"n":"\u0414\u0443\u0431\u043d\u0430","s":"dubna"},{"n":"\u0415\u0433\u043e\u0440\u044c\u0435\u0432\u0441\u043a","s":"egorevsk"},{"n":"\u0416\u0443\u043a\u043e\u0432\u0441\u043a\u0438\u0439","s":"zhukovskiy"},{"n":"\u0417\u0430\u0440\u0430\u0439\u0441\u043a","s":"zaraysk"},{"n":"\u0417\u0432\u0435\u043d\u0438\u0433\u043e\u0440\u043e\u0434","s":"zvenigorod"},{"n":"\u0418\u0432\u0430\u043d\u0442\u0435\u0435\u0432\u043a\u0430","s":"ivanteevka"},{"n":"\u0418\u0441\u0442\u0440\u0430","s":"istra"},{"n":"\u041a\u0430\u0448\u0438\u0440\u0430","s":"kashira"},{"n":"\u041a\u043b\u0438\u043c\u043e\u0432\u0441\u043a","s":"klimovsk"},{"n":"\u041a\u043b\u0438\u043d","s":"klin"},{"n":"\u041a\u043e\u043b\u043e\u043c\u043d\u0430","s":"kolomna"},{"n":"\u041a\u043e\u0440\u043e\u043b\u0451\u0432","s":"korolev"},{"n":"\u041a\u043e\u0442\u0435\u043b\u044c\u043d\u0438\u043a\u0438","s":"kotelniki"},{"n":"\u041a\u0440\u0430\u0441\u043d\u043e\u0430\u0440\u043c\u0435\u0439\u0441\u043a","s":"krasnoarmeysk"},{"n":"\u041a\u0440\u0430\u0441\u043d\u043e\u0433\u043e\u0440\u0441\u043a","s":"krasnogorsk"},{"n":"\u041a\u0440\u0430\u0441\u043d\u043e\u0437\u043d\u0430\u043c\u0435\u043d\u0441\u043a","s":"krasnoznamensk"},{"n":"\u041a\u0443\u0431\u0438\u043d\u043a\u0430","s":"kubinka"},{"n":"\u041a\u0443\u0440\u043e\u0432\u0441\u043a\u043e\u0435","s":"kurovskoe"},{"n":"\u041b\u0438\u043a\u0438\u043d\u043e-\u0414\u0443\u043b\u0451\u0432\u043e","s":"likino-dulevo"},{"n":"\u041b\u043e\u0431\u043d\u044f","s":"lobnya"},{"n":"\u041b\u043e\u0441\u0438\u043d\u043e-\u041f\u0435\u0442\u0440\u043e\u0432\u0441\u043a\u0438\u0439","s":"losino-petrovskiy"},{"n":"\u041b\u0443\u0445\u043e\u0432\u0438\u0446\u044b","s":"lukhovitsy"},{"n":"\u041b\u044b\u0442\u043a\u0430\u0440\u0438\u043d\u043e","s":"lytkarino"},{"n":"\u041b\u044e\u0431\u0435\u0440\u0446\u044b","s":"lyubertsy"},{"n":"\u041c\u043e\u0441\u043a\u0432\u0430","s":"moscow"},{"n":"\u041c\u043e\u0436\u0430\u0439\u0441\u043a","s":"mozhaysk"},{"n":"\u041c\u044b\u0442\u0438\u0449\u0438","s":"mytishchi"},{"n":"\u041d\u0430\u0440\u043e-\u0424\u043e\u043c\u0438\u043d\u0441\u043a","s":"naro-fominsk"},{"n":"\u041d\u043e\u0433\u0438\u043d\u0441\u043a","s":"noginsk"},{"n":"\u041e\u0434\u0438\u043d\u0446\u043e\u0432\u043e","s":"odintsovo"},{"n":"\u041e\u0437\u0451\u0440\u044b","s":"ozery"},{"n":"\u041e\u0440\u0435\u0445\u043e\u0432\u043e-\u0417\u0443\u0435\u0432\u043e","s":"orekhovo-zuevo"},{"n":"\u041f\u0430\u0432\u043b\u043e\u0432\u0441\u043a\u0438\u0439 \u041f\u043e\u0441\u0430\u0434","s":"pavlovskiy-posad"},{"n":"\u041f\u0435\u0440\u0435\u0441\u0432\u0435\u0442","s":"peresvet"},{"n":"\u041f\u043e\u0434\u043e\u043b\u044c\u0441\u043a","s":"podolsk"},{"n":"\u041f\u0440\u043e\u0442\u0432\u0438\u043d\u043e","s":"protvino"},{"n":"\u041f\u0443\u0448\u043a\u0438\u043d\u043e","s":"pushkino"},{"n":"\u0420\u0430\u043c\u0435\u043d\u0441\u043a\u043e\u0435","s":"ramenskoe"},{"n":"\u0420\u0435\u0443\u0442\u043e\u0432","s":"reutov"},{"n":"\u0420\u043e\u0448\u0430\u043b\u044c","s":"roshal"},{"n":"\u0420\u0443\u0437\u0430","s":"ruza"},{"n":"\u0421\u0435\u0440\u0433\u0438\u0435\u0432 \u041f\u043e\u0441\u0430\u0434","s":"sergiev-posad"},{"n":"\u0421\u0435\u0440\u043f\u0443\u0445\u043e\u0432","s":"serpukhov"},{"n":"\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u043e\u0433\u043e\u0440\u0441\u043a","s":"solnechnogorsk"},{"n":"\u0421\u0442\u0430\u0440\u0430\u044f \u041a\u0443\u043f\u0430\u0432\u043d\u0430","s":"staraya-kupavna"},{"n":"\u0421\u0442\u0443\u043f\u0438\u043d\u043e","s":"stupino"},{"n":"\u0422\u0430\u043b\u0434\u043e\u043c","s":"taldom"},{"n":"\u0422\u0440\u043e\u0438\u0446\u043a","s":"troitsk"},{"n":"\u0424\u0440\u044f\u0437\u0438\u043d\u043e","s":"fryazino"},{"n":"\u0425\u0438\u043c\u043a\u0438","s":"khimki"},{"n":"\u0427\u0435\u0440\u043d\u043e\u0433\u043e\u043b\u043e\u0432\u043a\u0430","s":"chernogolovka"},{"n":"\u0427\u0435\u0445\u043e\u0432","s":"chekhov"},{"n":"\u0428\u0430\u0442\u0443\u0440\u0430","s":"shatura"},{"n":"\u0429\u0451\u043b\u043a\u043e\u0432\u043e","s":"shchelkovo"},{"n":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0433\u043e\u0440\u0441\u043a","s":"elektrogorsk"},{"n":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0442\u0430\u043b\u044c","s":"elektrostal"}]};
 //# sourceURL=sk-city-js-extra
 </script>
-<script id="sk-city-js" src="https://агерис.рф/wp-content/themes/ageris/assets/js/city.js?ver=1.0"></script>
-<script src="https://агерис.рф/wp-content/themes/ageris/assets/js/jquery.maskedinput.min.js"></script>
+<script id="sk-city-js" src="wp-content/themes/ageris/assets/js/city.js?ver=1.0"></script>
+<script src="wp-content/themes/ageris/assets/js/jquery.maskedinput.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
@@ -1279,6 +1303,7 @@ document.addEventListener('wpcf7mailsent', function (event) {
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
+if (window.AGERIS_LIVE) {
 	(function(m,e,t,r,i,k,a){
 		m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 		m[i].l=1*new Date();
@@ -1287,6 +1312,7 @@ document.addEventListener('wpcf7mailsent', function (event) {
 	})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=24148573', 'ym');
 
 	ym(24148573, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+}
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/24148573" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
