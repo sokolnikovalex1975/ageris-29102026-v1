@@ -28,16 +28,19 @@ if (!window.AGERIS_LIVE) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="wp-content/themes/ageris/assets/css/style.css?ver=1.16">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="wp-content/themes/ageris/assets/css/style.css?ver=1.17">
+<link rel="preload" href="wp-content/themes/ageris/assets/fonts/montserrat/montserrat-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="wp-content/themes/ageris/assets/fonts/literata/literata-700-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="wp-content/themes/ageris/assets/fonts/literata/literata-700-latin-symbols.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="wp-content/themes/ageris/assets/fonts/montserrat/montserrat-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="wp-content/themes/ageris/assets/fonts/montserrat/montserrat-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" media="(min-width: 768px)" imagesrcset="wp-content/themes/ageris/assets/img/bg/hero-1280.webp 1280w, wp-content/themes/ageris/assets/img/bg/hero-1360.webp 1360w, wp-content/themes/ageris/assets/img/bg/hero-1600.webp 1600w, wp-content/themes/ageris/assets/img/bg/hero-1920.webp 1920w, wp-content/themes/ageris/assets/img/bg/hero-2560.webp 2560w" imagesizes="(max-width: 991px) 1200px, (max-width: 1199px) 1470px, (max-width: 1355px) 1355px, 100vw">
 <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
-<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
 <title>Защищаем бизнес от вредителей по стандартам ХАССП | Центр дезинфекции «Агерис»</title>
 
 		<!-- All in One SEO 4.9.3 - aioseo.com -->
 	<meta name="robots" content="max-image-preview:large" />
+	<meta name="description" content="Пест-контроль и пест-менеджмент по стандартам ХАССП для бизнеса: аудит объекта, мониторинг, целевые обработки и документация для Роспотребнадзора." />
 	<link rel="canonical" href="https://агерис.рф/audit/" />
 	<meta name="generator" content="All in One SEO (AIOSEO) 4.9.3" />
 		<meta property="og:locale" content="ru_RU" />
@@ -93,7 +96,7 @@ radist_tracker({
 	<div class="container flex items-center justify-between">
 		<div class="left-column">
 			<div class="brand">
-				<a href="#"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.png?ver=2" alt=""></a>
+				<a href="#"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.webp" alt="Агерис"></a>
 			</div>
 		</div>
 		<div class="right-column flex items-center justify-between">
@@ -129,13 +132,13 @@ radist_tracker({
 			</div>
 			<div class="telephone">
 				<a class="hidden hidden-sm hidden-md hidden-xl" href="tel:+74951043601">+7 (495) 104-36-01</a>
-				<a class="hidden-lg hidden-xxl" href="tel:+74951043601"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-tel"></use></svg></a>
+				<a class="hidden-lg hidden-xxl" href="tel:+74951043601" aria-label="Позвонить: +7 (495) 104-36-01"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-tel"></use></svg></a>
 			</div>
 			<div class="yellow-btn hidden hidden-sm">
 				<a data-fancybox="" data-src="#audit" href="javascript:;">Подать заявку</a>
 			</div>
 			<div class="mobile-nav hidden-xl hidden-xxl">
-				<a data-fancybox="" data-src="#menu" href="javascript:;">
+				<a data-fancybox="" data-src="#menu" href="javascript:;" aria-label="Меню">
 					<svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M5 12H18" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path><path d="M5 17H11" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path><path d="M5 7H15" stroke="currentcolor" stroke-width="2" stroke-linecap="round"></path></g></svg>
 				</a>
 			</div>
@@ -211,8 +214,9 @@ radist_tracker({
 					<img class="img-responsive ml-auto" src="wp-content/themes/ageris/assets/img/bg/hero.png" alt="">
 				</div> -->
 				<picture class="hidden hidden-sm">
-					<source media="(max-width: 575px)" srcset="wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" type="image/jpeg">
-					<img src="wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" alt="" class="" loading="lazy">
+					<source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+					<source type="image/webp" srcset="wp-content/themes/ageris/assets/img/bg/hero-1280.webp 1280w, wp-content/themes/ageris/assets/img/bg/hero-1360.webp 1360w, wp-content/themes/ageris/assets/img/bg/hero-1600.webp 1600w, wp-content/themes/ageris/assets/img/bg/hero-1920.webp 1920w, wp-content/themes/ageris/assets/img/bg/hero-2560.webp 2560w" sizes="(max-width: 991px) 1200px, (max-width: 1199px) 1470px, (max-width: 1355px) 1355px, 100vw">
+					<img src="wp-content/themes/ageris/assets/img/bg/hero.jpg?ver=1" alt="" class="" width="2560" height="1440" fetchpriority="high">
 				</picture>
 			</div>
 		</div>
@@ -256,8 +260,8 @@ radist_tracker({
 					</div>
 				</div>
 				<div class="grid-item">
-					<img class="img-responsive ipm-rotate" src="wp-content/themes/ageris/assets/img/bg/ipm.png" alt="">
-					<img class="img-responsive ipm-rotate__arrow" src="wp-content/themes/ageris/assets/img/bg/ipm-arrow.png" alt="">
+					<img class="img-responsive ipm-rotate" src="wp-content/themes/ageris/assets/img/bg/ipm.png" alt="" loading="lazy" decoding="async">
+					<img class="img-responsive ipm-rotate__arrow" src="wp-content/themes/ageris/assets/img/bg/ipm-arrow.png" alt="" loading="lazy" decoding="async">
 					<div class="container-ipm">
 						<div class="ipm-grade flex flex-row items-center justify-center gap-xs">
 							<svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="#icon-grade"></use></svg>
@@ -299,7 +303,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-1-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-1-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-1-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Пищевое производство</p>
@@ -315,7 +319,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-2-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-2-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-2-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Склады и логистика</p>
@@ -330,7 +334,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-3-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-3-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-3-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Хорека</p>
@@ -345,7 +349,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-4-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-4-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-4-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Гостиницы</p>
@@ -360,7 +364,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-5.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-5-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-5-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-5-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Ритейл</p>
@@ -375,7 +379,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-6.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-6-724.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-6-543.webp 543w, wp-content/themes/ageris/assets/img/specifics/specific-6-724.webp 724w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 384px, 417px" width="724" height="444" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Элеваторы и мукомолье</p>
@@ -401,7 +405,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-1.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Мышевидные грызуны <span>Rattus norvegicus · Mus musculus</span></p>
@@ -419,7 +423,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-2.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Тараканы <span>Blattella germanica · Blatta orientalis</span></p>
@@ -437,7 +441,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-3.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Вредители запасов <span>Sitophilus · Tribolium · Plodia interpunctella</span></p>
@@ -455,7 +459,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-4.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Постельные клопы <span>Cimex lectularius</span></p>
@@ -473,7 +477,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-5.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-5.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Летающие насекомые <span>Musca domestica · Drosophila spp.</span></p>
@@ -491,7 +495,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-row">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-6.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/objects/object-6.webp" width="72" height="72" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Синантропные птицы <span>Columba livia f. urbana</span></p>
@@ -529,14 +533,14 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-1.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-1-1112.webp" srcset="wp-content/themes/ageris/assets/img/implementation/implementation-1-556.webp 556w, wp-content/themes/ageris/assets/img/implementation/implementation-1-1112.webp 1112w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 588px, 638px" width="1112" height="526" alt="" loading="lazy" decoding="async">
 						</div>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-2.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-2-1112.webp" srcset="wp-content/themes/ageris/assets/img/implementation/implementation-2-556.webp 556w, wp-content/themes/ageris/assets/img/implementation/implementation-2-1112.webp 1112w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 588px, 638px" width="1112" height="526" alt="" loading="lazy" decoding="async">
 						</div>
 					</div>
 				</div>
@@ -561,14 +565,14 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-3.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-3-1112.webp" srcset="wp-content/themes/ageris/assets/img/implementation/implementation-3-556.webp 556w, wp-content/themes/ageris/assets/img/implementation/implementation-3-1112.webp 1112w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 588px, 638px" width="1112" height="526" alt="" loading="lazy" decoding="async">
 						</div>
 					</div>
 				</div>
 				<div class="grid-item">
 					<div class="card">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-4.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/implementation/implementation-4-1112.webp" srcset="wp-content/themes/ageris/assets/img/implementation/implementation-4-556.webp 556w, wp-content/themes/ageris/assets/img/implementation/implementation-4-1112.webp 1112w" sizes="(max-width: 575px) calc(100vw - 40px), (max-width: 767px) 500px, (max-width: 991px) 332px, (max-width: 1199px) 448px, (max-width: 1399px) 588px, 638px" width="1112" height="526" alt="" loading="lazy" decoding="async">
 						</div>
 					</div>
 				</div>
@@ -704,7 +708,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-7.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-7-1112.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-7-640.webp 640w, wp-content/themes/ageris/assets/img/specifics/specific-7-1112.webp 1112w" sizes="(max-width: 1199px) 500px, (max-width: 1399px) 588px, 638px" width="1112" height="556" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Снижение активности грызунов на 97% за 3 месяца<br>Мясокомбинат 4 200 м²</p>
@@ -718,7 +722,7 @@ radist_tracker({
 				<div class="grid-item">
 					<div class="card flex flex-col">
 						<div class="card-image">
-							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-8.jpg" alt="">
+							<img class="img-responsive" src="wp-content/themes/ageris/assets/img/specifics/specific-8-1112.webp" srcset="wp-content/themes/ageris/assets/img/specifics/specific-8-640.webp 640w, wp-content/themes/ageris/assets/img/specifics/specific-8-1112.webp 1112w" sizes="(max-width: 1199px) 500px, (max-width: 1399px) 588px, 638px" width="1112" height="556" alt="" loading="lazy" decoding="async">
 						</div>
 						<div class="card-desc">
 							<p>Нулевые жалобы на клопов 18 месяцев подряд<br>Сеть отелей (3★–5★)</p>
@@ -883,10 +887,10 @@ radist_tracker({
 							</div>
 							<div class="header-social flex justify-between gap-xs">
 								<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="" loading="lazy" decoding="async">
 								</a>
 								<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+									<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="" loading="lazy" decoding="async">
 								</a>
 							</div>
 						</div>
@@ -937,7 +941,7 @@ radist_tracker({
 <footer class="footer">
 	<div class="container">
 		<div class="widget title">
-			<img class="img-responsive" src="wp-content/themes/ageris/assets/img/footer-logo.png" alt="">
+			<img class="img-responsive" src="wp-content/themes/ageris/assets/img/footer-logo.webp" alt="" loading="lazy" decoding="async">
 		</div>
 		<div class="grid">
 			<div class="widget">
@@ -1003,17 +1007,17 @@ radist_tracker({
 						</div>
 						<div class="header-social flex justify-between gap-xs">
 							<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="" loading="lazy" decoding="async">
 							</a>
 							<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+								<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="" loading="lazy" decoding="async">
 							</a>
 						</div>
 					</div>
 					<div class="yellow-btn">
 						<a class="inline-block" href="mailto:info@ageris.ru">info@ageris.ru</a>
 					</div>
-					<img class="img-responsive qr-code" src="wp-content/themes/ageris/assets/img/qr.jpg" alt="">
+					<img class="img-responsive qr-code" src="wp-content/themes/ageris/assets/img/qr.webp" width="370" height="376" alt="" loading="lazy" decoding="async">
 				</div>
 			</div>
 		</div>
@@ -1038,7 +1042,7 @@ radist_tracker({
 <div id="menu" style="display: none; border-radius: 0; width: 100%; max-width: 100%;">
 	<div class="flex flex-col">
 		<div class="brand">
-			<a href="https://агерис.рф/"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.png" alt=""></a>
+			<a href="https://агерис.рф/"><img class="img-responsive" src="wp-content/themes/ageris/assets/img/ageris.webp" alt="Агерис" loading="lazy" decoding="async"></a>
 		</div>
 		<nav class="header-nav">
 			<ul class="flex flex-col gap-xs">
@@ -1053,10 +1057,10 @@ radist_tracker({
 		</nav>
 		<div class="header-social flex gap-md">
 			<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" rel="noopener noreferrer" aria-label="MAX">
-				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="">
+				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/max.svg" alt="" loading="lazy" decoding="async">
 			</a>
 			<a href="https://t.me/Centr_Dezinfection" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="">
+				<img class="img-responsive" src="wp-content/themes/ageris/assets/img/icons/tg.svg" alt="" loading="lazy" decoding="async">
 			</a>
 		</div>
 		<div class="telephone">
@@ -1147,11 +1151,10 @@ var SK_CITY = {"cities":[{"n":"\u0410\u043f\u0440\u0435\u043b\u0435\u0432\u043a\
 //# sourceURL=sk-city-js-extra
 </script>
 <script id="sk-city-js" src="wp-content/themes/ageris/assets/js/city.js?ver=1.0"></script>
+<script src="wp-content/themes/ageris/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
 <script src="wp-content/themes/ageris/assets/js/jquery.maskedinput.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link href="wp-content/themes/ageris/assets/vendor/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+<script src="wp-content/themes/ageris/assets/vendor/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script>
 /* FAQ */
 document.querySelectorAll('.faq-question').forEach(function(button) {
@@ -1262,12 +1265,12 @@ document.addEventListener('wpcf7mailsent', function (event) {
 </svg>
 
 <div class="desktop-btn">
-	<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank">
+	<a href="https://max.ru/u/f9LHodD0cOIlIUXFkt4KMFP88lD8n4TArBiTcV7RI1XML5c4o39QfsDBXUc" target="_blank" aria-label="MAX">
 		<div class="max-button">
 			<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_8510_8338)"><mask id="mask0_8510_8338" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><path d="M50.7571 0.261719C78.2929 0.261719 99.8857 22.5974 99.8857 50.1474C99.8857 77.6974 77.6071 99.4903 51.0214 99.4903C41.5857 99.4903 37.0143 98.1617 29.65 92.9474C29.1429 92.5903 28.45 92.6831 28.0214 93.1403C22.3571 99.1831 7.85 103.426 7.18571 95.176C7.18571 80.7903 0 71.4474 0 49.876C0 21.5546 23.2214 0.261719 50.7571 0.261719ZM51.5286 24.8117C38.4643 24.126 28.2643 33.1974 26.0143 47.3831C24.15 59.1332 27.45 73.4546 30.2786 74.176C31.4786 74.4832 34.3571 72.276 36.4571 70.2974C36.85 69.926 37.45 69.8617 37.9071 70.1474C41.1786 72.1474 44.8786 73.6474 48.9571 73.8617C62.3714 74.5617 74.2571 64.0617 74.9643 50.6474C75.6643 37.2331 64.9429 25.5046 51.5286 24.8046V24.8117Z" fill="white"/></mask><g mask="url(#mask0_8510_8338)"><path d="M49.6996 50.0808L-12.4076 84.5022C-13.4076 82.6951 -14.329 80.8451 -15.1719 78.9594L49.6924 50.0808H49.6996Z" fill="white"/><path d="M49.6975 50.0808L-15.1739 78.9594C-16.0167 77.0737 -16.7739 75.1522 -17.4453 73.1951L49.6904 50.0808H49.6975Z" fill="white"/><path d="M49.6969 50.0808L-17.446 73.1951C-18.1174 71.2451 -18.7031 69.2594 -19.2031 67.2594L49.6969 50.0808Z" fill="white"/><path d="M49.6982 50.0808L-19.2018 67.2594C-19.7018 65.2522 -20.1161 63.2308 -20.4375 61.188L49.6911 50.0808H49.6982Z" fill="white"/><path d="M49.6997 50.0808L-20.4289 61.188C-20.7503 59.1451 -20.986 57.0951 -21.1289 55.0308L49.7068 50.0808H49.6997Z" fill="white"/><path d="M49.6979 50.0821L-21.1379 55.0321C-21.2807 52.9678 -21.3379 50.9035 -21.3021 48.8392L49.6907 50.0821H49.6979Z" fill="white"/><path d="M49.696 50.082L-21.2969 48.8392C-21.2612 46.7749 -21.1326 44.7106 -20.9183 42.6534L49.696 50.0749V50.082Z" fill="white"/><path d="M49.6963 50.0817L-20.918 42.6603C-20.7037 40.6032 -20.3965 38.5603 -20.0037 36.5317L49.6963 50.0817Z" fill="white"/><path d="M49.6993 50.0819L-20.0078 36.5319C-19.615 34.5034 -19.1292 32.4962 -18.565 30.5105L49.6922 50.0819H49.6993Z" fill="white"/><path d="M49.6986 50.0801L-18.5586 30.5086C-17.9872 28.5229 -17.33 26.5658 -16.5943 24.6372L49.6986 50.0872V50.0801Z" fill="white"/><path d="M49.6991 50.0822L-16.5938 24.6322C-15.8509 22.7036 -15.0295 20.8108 -14.1223 18.9536L49.6991 50.0822Z" fill="white"/><path d="M49.6964 50.0814L-14.125 18.9529C-13.2179 17.0957 -12.2321 15.2814 -11.1679 13.51L49.6964 50.0814Z" fill="white"/><path d="M49.6963 50.0811L-11.168 13.5096C-10.1037 11.7382 -8.96083 10.0168 -7.74654 8.34534L49.6963 50.0811Z" fill="white"/><path d="M49.6961 50.0818L-7.75391 8.34609C-6.53962 6.67466 -5.25391 5.06038 -3.89676 3.49609L49.6889 50.0818H49.6961Z" fill="white"/><path d="M49.6983 50.0825L-3.89453 3.49676C-2.53739 1.93962 -1.11596 0.43962 0.369754 -0.996094L49.6912 50.0825H49.6983Z" fill="white"/><path d="M49.6997 50.0824L0.371094 -0.996129C1.85681 -2.43184 3.40681 -3.80327 5.01395 -5.10327L49.6997 50.0824Z" fill="white"/><path d="M49.6974 50.0824L5.01172 -5.10335C6.61886 -6.40335 8.276 -7.63192 9.99029 -8.78906L49.6974 50.0752V50.0824Z" fill="white"/><path d="M49.6993 50.0814L9.99219 -8.79004C11.7065 -9.94718 13.4636 -11.0258 15.2708 -12.0258L49.6922 50.0814H49.6993Z" fill="white"/><path d="M49.6981 50.0807L15.2695 -12.0265C17.0767 -13.0265 18.9267 -13.9479 20.8124 -14.7908L49.691 50.0735H49.6981V50.0807Z" fill="white"/><path d="M49.6982 50.0808L20.8125 -14.7906C22.6982 -15.6334 24.6196 -16.3906 26.5768 -17.062L49.6911 50.0737H49.6982V50.0808Z" fill="white"/><path d="M49.6996 50.0814L26.5781 -17.0543C28.5281 -17.7257 30.5138 -18.3114 32.521 -18.8114L49.6996 50.0886V50.0814Z" fill="white"/><path d="M49.6981 50.0798L32.5195 -18.8202C34.5267 -19.3202 36.5481 -19.7345 38.591 -20.0559L49.6981 50.0798Z" fill="white"/><path d="M49.697 50.0808L38.5898 -20.0478C40.6327 -20.3692 42.6827 -20.6049 44.747 -20.7478L49.697 50.0879V50.0808Z" fill="white"/><path d="M49.6961 50.0812L44.7461 -20.7546C46.8104 -20.8974 48.8747 -20.9546 50.939 -20.9188L49.6961 50.074V50.0812Z" fill="white"/><path d="M49.6992 50.0804L50.9421 -20.9125C53.0064 -20.8768 55.0706 -20.7482 57.1278 -20.5339L49.7064 50.0804H49.6992Z" fill="white"/><path d="M49.6992 50.0813L57.1206 -20.533C59.1778 -20.3187 61.2206 -20.0115 63.2492 -19.6187L49.6992 50.0813Z" fill="white"/><path d="M49.6992 50.0822L63.2492 -19.6178C65.2778 -19.2249 67.2849 -18.7392 69.2706 -18.1749L49.6992 50.0822Z" fill="white"/><path d="M49.6986 50.0818L69.27 -18.1753C71.2557 -17.6039 73.2128 -16.9467 75.1414 -16.211L49.6914 50.0818H49.6986Z" fill="white"/><path d="M49.6986 50.0819L75.1414 -16.2109C77.07 -15.4681 78.9628 -14.6467 80.82 -13.7395L49.6914 50.0819H49.6986Z" fill="white"/><path d="M49.6992 50.0825L80.8278 -13.7389C82.6849 -12.8317 84.4992 -11.846 86.2706 -10.7817L49.6992 50.0825Z" fill="white"/><path d="M49.6992 50.0802L86.2706 -10.7841C88.0421 -9.71977 89.7635 -8.57691 91.4349 -7.36263L49.6992 50.0802Z" fill="white"/><path d="M49.6992 50.0823L91.4349 -7.3606C93.1064 -6.14631 94.7206 -4.8606 96.2849 -3.50345L49.6992 50.0823Z" fill="white"/><path d="M49.6992 50.0799L96.2849 -3.51294C97.8421 -2.1558 99.3421 -0.734368 100.778 0.751347L49.6992 50.0728V50.0799Z" fill="white"/><path d="M49.6992 50.0819L100.778 0.753296C102.214 2.23901 103.585 3.78901 104.885 5.39615L49.6992 50.0819Z" fill="white"/><path d="M49.6992 50.0818L104.878 5.39612C106.178 7.00326 107.406 8.6604 108.564 10.3747L49.6992 50.0818Z" fill="white"/><path d="M49.6986 50.0809L108.563 10.3738C109.72 12.0881 110.799 13.8452 111.799 15.6523L49.6914 50.0738H49.6986V50.0809Z" fill="white"/><path d="M49.6992 50.0799L111.806 15.6584C112.806 17.4656 113.728 19.3156 114.571 21.2013L49.7064 50.0799H49.6992Z" fill="white"/><path d="M49.6992 50.0811L114.563 21.2025C115.406 23.0882 116.163 25.0097 116.835 26.9668L49.6992 50.0811Z" fill="white"/><path d="M49.6986 50.0813L116.834 26.967C117.506 28.917 118.091 30.9028 118.591 32.9099L49.6914 50.0885L49.6986 50.0813Z" fill="white"/><path d="M49.6992 50.0803L118.599 32.9017C119.099 34.9089 119.514 36.9303 119.835 38.9732L49.6992 50.0803Z" fill="white"/><path d="M49.6986 50.0803L119.827 38.9731C120.149 41.016 120.384 43.066 120.527 45.1303L49.6914 50.0803H49.6986Z" fill="white"/><path d="M49.6992 50.0811L120.535 45.1311C120.678 47.1954 120.735 49.2597 120.699 51.324L49.7064 50.0811H49.6992Z" fill="white"/><path d="M49.6992 50.0808L120.692 51.3237C120.656 53.388 120.528 55.4522 120.314 57.5094L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L120.314 57.5022C120.099 59.5594 119.792 61.6022 119.399 63.6308L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L119.399 63.6308C119.006 65.6594 118.521 67.6665 117.956 69.6522L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0825L117.956 69.6539C117.385 71.6396 116.728 73.5967 115.992 75.5253L49.6992 50.0753V50.0825Z" fill="white"/><path d="M49.6992 50.0808L115.992 75.5308C115.249 77.4594 114.428 79.3522 113.521 81.2094L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L113.521 81.2094C112.613 83.0665 111.628 84.8808 110.563 86.6522L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L110.563 86.6522C109.499 88.4237 108.356 90.1451 107.142 91.8165L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L107.142 91.8165C105.928 93.4879 104.642 95.1022 103.285 96.6665L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L103.285 96.6665C101.928 98.2237 100.506 99.7237 99.0206 101.159L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L99.0207 101.159C97.5349 102.595 95.9849 103.967 94.3849 105.267L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L94.3849 105.267C92.7778 106.567 91.1206 107.795 89.4064 108.952L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0825L89.4064 108.947C87.6921 110.104 85.9349 111.182 84.1278 112.182L49.7064 50.0753H49.6992V50.0825Z" fill="white"/><path d="M49.6992 50.0808L84.1206 112.188C82.3135 113.188 80.4635 114.109 78.5778 114.952L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L78.5778 114.945C76.6921 115.788 74.7706 116.545 72.8135 117.217L49.6992 50.0808Z" fill="white"/><path d="M49.6986 50.0825L72.8128 117.218C70.8557 117.89 68.8771 118.475 66.87 118.975L49.6914 50.0753H49.6986V50.0825Z" fill="white"/><path d="M49.6992 50.0808L66.8778 118.981C64.8706 119.481 62.8492 119.895 60.8064 120.217L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L60.8064 120.217C58.7635 120.538 56.7135 120.774 54.6492 120.917L49.6992 50.0808Z" fill="white"/><path d="M49.696 50.0808L54.646 120.917C52.5817 121.059 50.5174 121.117 48.4531 121.081L49.696 50.088V50.0808Z" fill="white"/><path d="M49.6981 50.0808L48.4552 121.074C46.391 121.038 44.3267 120.909 42.2695 120.695L49.691 50.0808H49.6981Z" fill="white"/><path d="M49.6984 50.0808L42.277 120.695C40.2199 120.481 38.177 120.174 36.1484 119.781L49.6984 50.0808Z" fill="white"/><path d="M49.6964 50.0808L36.1464 119.781C34.1179 119.388 32.1107 118.902 30.125 118.338L49.6964 50.0808Z" fill="white"/><path d="M49.6968 50.0808L30.1253 118.338C28.1396 117.767 26.1825 117.109 24.2539 116.374L49.7039 50.0808H49.6968Z" fill="white"/><path d="M49.6989 50.0808L24.2489 116.374C22.3203 115.631 20.4275 114.809 18.5703 113.902L49.6989 50.0808Z" fill="white"/><path d="M49.6964 50.0808L18.5679 113.902C16.7107 112.995 14.8964 112.009 13.125 110.945L49.6964 50.0808Z" fill="white"/><path d="M49.6967 50.0808L13.1252 110.945C11.3538 109.881 9.63237 108.738 7.96094 107.524L49.6967 50.0808Z" fill="white"/><path d="M49.6983 50.0808L7.95547 107.524C6.28404 106.309 4.66975 105.024 3.10547 103.667L49.6912 50.0808H49.6983Z" fill="white"/><path d="M49.6997 50.0808L3.11395 103.667C1.55681 102.309 0.0568079 100.888 -1.37891 99.4022L49.6997 50.0808Z" fill="white"/><path d="M49.6974 50.0808L-1.38114 99.4022C-2.81685 97.9165 -4.18828 96.3665 -5.48828 94.7665L49.6974 50.0808Z" fill="white"/><path d="M49.6996 50.0808L-5.48616 94.7665C-6.78616 93.1594 -8.01473 91.5022 -9.17188 89.7879L49.6924 50.0808H49.6996Z" fill="white"/><path d="M49.697 50.0808L-9.17444 89.788C-10.3316 88.0737 -11.4102 86.3094 -12.4102 84.5022L49.697 50.0808Z" fill="white"/><g filter="url(#filter0_f_8510_8338)"><path d="M49.6996 50.0808L-12.4076 84.5022C-13.4076 82.6951 -14.329 80.8451 -15.1719 78.9594L49.6924 50.0808H49.6996Z" fill="white"/><path d="M49.6975 50.0808L-15.1739 78.9594C-16.0167 77.0737 -16.7739 75.1522 -17.4453 73.1951L49.6904 50.0808H49.6975Z" fill="white"/><path d="M49.6969 50.0808L-17.446 73.1951C-18.1174 71.2451 -18.7031 69.2594 -19.2031 67.2594L49.6969 50.0808Z" fill="white"/><path d="M49.6982 50.0808L-19.2018 67.2594C-19.7018 65.2522 -20.1161 63.2308 -20.4375 61.188L49.6911 50.0808H49.6982Z" fill="white"/><path d="M49.6997 50.0808L-20.4289 61.188C-20.7503 59.1451 -20.986 57.0951 -21.1289 55.0308L49.7068 50.0808H49.6997Z" fill="white"/><path d="M49.6979 50.0821L-21.1379 55.0321C-21.2807 52.9678 -21.3379 50.9035 -21.3021 48.8392L49.6907 50.0821H49.6979Z" fill="white"/><path d="M49.696 50.082L-21.2969 48.8392C-21.2612 46.7749 -21.1326 44.7106 -20.9183 42.6534L49.696 50.0749V50.082Z" fill="white"/><path d="M49.6963 50.0817L-20.918 42.6603C-20.7037 40.6032 -20.3965 38.5603 -20.0037 36.5317L49.6963 50.0817Z" fill="white"/><path d="M49.6993 50.0819L-20.0078 36.5319C-19.615 34.5034 -19.1292 32.4962 -18.565 30.5105L49.6922 50.0819H49.6993Z" fill="white"/><path d="M49.6986 50.0801L-18.5586 30.5086C-17.9872 28.5229 -17.33 26.5658 -16.5943 24.6372L49.6986 50.0872V50.0801Z" fill="white"/><path d="M49.6991 50.0822L-16.5938 24.6322C-15.8509 22.7036 -15.0295 20.8108 -14.1223 18.9536L49.6991 50.0822Z" fill="white"/><path d="M49.6964 50.0814L-14.125 18.9529C-13.2179 17.0957 -12.2321 15.2814 -11.1679 13.51L49.6964 50.0814Z" fill="white"/><path d="M49.6963 50.0811L-11.168 13.5096C-10.1037 11.7382 -8.96083 10.0168 -7.74654 8.34534L49.6963 50.0811Z" fill="white"/><path d="M49.6961 50.0818L-7.75391 8.34609C-6.53962 6.67466 -5.25391 5.06038 -3.89676 3.49609L49.6889 50.0818H49.6961Z" fill="white"/><path d="M49.6983 50.0825L-3.89453 3.49676C-2.53739 1.93962 -1.11596 0.43962 0.369754 -0.996094L49.6912 50.0825H49.6983Z" fill="white"/><path d="M49.6997 50.0824L0.371094 -0.996129C1.85681 -2.43184 3.40681 -3.80327 5.01395 -5.10327L49.6997 50.0824Z" fill="white"/><path d="M49.6974 50.0824L5.01172 -5.10335C6.61886 -6.40335 8.276 -7.63192 9.99029 -8.78906L49.6974 50.0752V50.0824Z" fill="white"/><path d="M49.6993 50.0814L9.99219 -8.79004C11.7065 -9.94718 13.4636 -11.0258 15.2708 -12.0258L49.6922 50.0814H49.6993Z" fill="white"/><path d="M49.6981 50.0807L15.2695 -12.0265C17.0767 -13.0265 18.9267 -13.9479 20.8124 -14.7908L49.691 50.0735H49.6981V50.0807Z" fill="white"/><path d="M49.6982 50.0808L20.8125 -14.7906C22.6982 -15.6334 24.6196 -16.3906 26.5768 -17.062L49.6911 50.0737H49.6982V50.0808Z" fill="white"/><path d="M49.6996 50.0814L26.5781 -17.0543C28.5281 -17.7257 30.5138 -18.3114 32.521 -18.8114L49.6996 50.0886V50.0814Z" fill="white"/><path d="M49.6981 50.0798L32.5195 -18.8202C34.5267 -19.3202 36.5481 -19.7345 38.591 -20.0559L49.6981 50.0798Z" fill="white"/><path d="M49.697 50.0808L38.5898 -20.0478C40.6327 -20.3692 42.6827 -20.6049 44.747 -20.7478L49.697 50.0879V50.0808Z" fill="white"/><path d="M49.6961 50.0812L44.7461 -20.7546C46.8104 -20.8974 48.8747 -20.9546 50.939 -20.9188L49.6961 50.074V50.0812Z" fill="white"/><path d="M49.6992 50.0804L50.9421 -20.9125C53.0064 -20.8768 55.0706 -20.7482 57.1278 -20.5339L49.7064 50.0804H49.6992Z" fill="white"/><path d="M49.6992 50.0813L57.1206 -20.533C59.1778 -20.3187 61.2206 -20.0115 63.2492 -19.6187L49.6992 50.0813Z" fill="white"/><path d="M49.6992 50.0822L63.2492 -19.6178C65.2778 -19.2249 67.2849 -18.7392 69.2706 -18.1749L49.6992 50.0822Z" fill="white"/><path d="M49.6986 50.0818L69.27 -18.1753C71.2557 -17.6039 73.2128 -16.9467 75.1414 -16.211L49.6914 50.0818H49.6986Z" fill="white"/><path d="M49.6986 50.0819L75.1414 -16.2109C77.07 -15.4681 78.9628 -14.6467 80.82 -13.7395L49.6914 50.0819H49.6986Z" fill="white"/><path d="M49.6992 50.0825L80.8278 -13.7389C82.6849 -12.8317 84.4992 -11.846 86.2706 -10.7817L49.6992 50.0825Z" fill="white"/><path d="M49.6992 50.0802L86.2706 -10.7841C88.0421 -9.71977 89.7635 -8.57691 91.4349 -7.36263L49.6992 50.0802Z" fill="white"/><path d="M49.6992 50.0823L91.4349 -7.3606C93.1064 -6.14631 94.7206 -4.8606 96.2849 -3.50345L49.6992 50.0823Z" fill="white"/><path d="M49.6992 50.0799L96.2849 -3.51294C97.8421 -2.1558 99.3421 -0.734368 100.778 0.751347L49.6992 50.0728V50.0799Z" fill="white"/><path d="M49.6992 50.0819L100.778 0.753296C102.214 2.23901 103.585 3.78901 104.885 5.39615L49.6992 50.0819Z" fill="white"/><path d="M49.6992 50.0818L104.878 5.39612C106.178 7.00326 107.406 8.6604 108.564 10.3747L49.6992 50.0818Z" fill="white"/><path d="M49.6986 50.0809L108.563 10.3738C109.72 12.0881 110.799 13.8452 111.799 15.6523L49.6914 50.0738H49.6986V50.0809Z" fill="white"/><path d="M49.6992 50.0799L111.806 15.6584C112.806 17.4656 113.728 19.3156 114.571 21.2013L49.7064 50.0799H49.6992Z" fill="white"/><path d="M49.6992 50.0811L114.563 21.2025C115.406 23.0882 116.163 25.0097 116.835 26.9668L49.6992 50.0811Z" fill="white"/><path d="M49.6986 50.0813L116.834 26.967C117.506 28.917 118.091 30.9028 118.591 32.9099L49.6914 50.0885L49.6986 50.0813Z" fill="white"/><path d="M49.6992 50.0803L118.599 32.9017C119.099 34.9089 119.514 36.9303 119.835 38.9732L49.6992 50.0803Z" fill="white"/><path d="M49.6986 50.0803L119.827 38.9731C120.149 41.016 120.384 43.066 120.527 45.1303L49.6914 50.0803H49.6986Z" fill="white"/><path d="M49.6992 50.0811L120.535 45.1311C120.678 47.1954 120.735 49.2597 120.699 51.324L49.7064 50.0811H49.6992Z" fill="white"/><path d="M49.6992 50.0808L120.692 51.3237C120.656 53.388 120.528 55.4522 120.314 57.5094L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L120.314 57.5022C120.099 59.5594 119.792 61.6022 119.399 63.6308L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L119.399 63.6308C119.006 65.6594 118.521 67.6665 117.956 69.6522L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0825L117.956 69.6539C117.385 71.6396 116.728 73.5967 115.992 75.5253L49.6992 50.0753V50.0825Z" fill="white"/><path d="M49.6992 50.0808L115.992 75.5308C115.249 77.4594 114.428 79.3522 113.521 81.2094L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L113.521 81.2094C112.613 83.0665 111.628 84.8808 110.563 86.6522L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L110.563 86.6522C109.499 88.4237 108.356 90.1451 107.142 91.8165L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L107.142 91.8165C105.928 93.4879 104.642 95.1022 103.285 96.6665L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L103.285 96.6665C101.928 98.2237 100.506 99.7237 99.0206 101.159L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L99.0207 101.159C97.5349 102.595 95.9849 103.967 94.3849 105.267L49.6992 50.0808Z" fill="white"/><path d="M49.6992 50.0808L94.3849 105.267C92.7778 106.567 91.1206 107.795 89.4064 108.952L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0825L89.4064 108.947C87.6921 110.104 85.9349 111.182 84.1278 112.182L49.7064 50.0753H49.6992V50.0825Z" fill="white"/><path d="M49.6992 50.0808L84.1206 112.188C82.3135 113.188 80.4635 114.109 78.5778 114.952L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L78.5778 114.945C76.6921 115.788 74.7706 116.545 72.8135 117.217L49.6992 50.0808Z" fill="white"/><path d="M49.6986 50.0825L72.8128 117.218C70.8557 117.89 68.8771 118.475 66.87 118.975L49.6914 50.0753H49.6986V50.0825Z" fill="white"/><path d="M49.6992 50.0808L66.8778 118.981C64.8706 119.481 62.8492 119.895 60.8064 120.217L49.6992 50.088V50.0808Z" fill="white"/><path d="M49.6992 50.0808L60.8064 120.217C58.7635 120.538 56.7135 120.774 54.6492 120.917L49.6992 50.0808Z" fill="white"/><path d="M49.696 50.0808L54.646 120.917C52.5817 121.059 50.5174 121.117 48.4531 121.081L49.696 50.088V50.0808Z" fill="white"/><path d="M49.6981 50.0808L48.4552 121.074C46.391 121.038 44.3267 120.909 42.2695 120.695L49.691 50.0808H49.6981Z" fill="white"/><path d="M49.6984 50.0808L42.277 120.695C40.2199 120.481 38.177 120.174 36.1484 119.781L49.6984 50.0808Z" fill="white"/><path d="M49.6964 50.0808L36.1464 119.781C34.1179 119.388 32.1107 118.902 30.125 118.338L49.6964 50.0808Z" fill="white"/><path d="M49.6968 50.0808L30.1253 118.338C28.1396 117.767 26.1825 117.109 24.2539 116.374L49.7039 50.0808H49.6968Z" fill="white"/><path d="M49.6989 50.0808L24.2489 116.374C22.3203 115.631 20.4275 114.809 18.5703 113.902L49.6989 50.0808Z" fill="white"/><path d="M49.6964 50.0808L18.5679 113.902C16.7107 112.995 14.8964 112.009 13.125 110.945L49.6964 50.0808Z" fill="white"/><path d="M49.6967 50.0808L13.1252 110.945C11.3538 109.881 9.63237 108.738 7.96094 107.524L49.6967 50.0808Z" fill="white"/><path d="M49.6983 50.0808L7.95547 107.524C6.28404 106.309 4.66975 105.024 3.10547 103.667L49.6912 50.0808H49.6983Z" fill="white"/><path d="M49.6997 50.0808L3.11395 103.667C1.55681 102.309 0.0568079 100.888 -1.37891 99.4022L49.6997 50.0808Z" fill="white"/><path d="M49.6974 50.0808L-1.38114 99.4022C-2.81685 97.9165 -4.18828 96.3665 -5.48828 94.7665L49.6974 50.0808Z" fill="white"/><path d="M49.6996 50.0808L-5.48616 94.7665C-6.78616 93.1594 -8.01473 91.5022 -9.17188 89.7879L49.6924 50.0808H49.6996Z" fill="white"/><path d="M49.697 50.0808L-9.17444 89.788C-10.3316 88.0737 -11.4102 86.3094 -12.4102 84.5022L49.697 50.0808Z" fill="white"/></g></g></g><defs><filter id="filter0_f_8510_8338" x="-38.4554" y="-38.0721" width="176.309" height="176.306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="8.57143" result="effect1_foregroundBlur_8510_8338"/></filter><clipPath id="clip0_8510_8338"><rect width="100" height="100" fill="white"/></clipPath></defs></svg>
 		</div>
 	</a>
-	<a href="https://t.me/Centr_Dezinfection" target="_blank">
+	<a href="https://t.me/Centr_Dezinfection" target="_blank" aria-label="Telegram">
 		<div class="telegram-button">
 			<svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z" fill="#ffffff"></path></g></svg>
 		</div>
