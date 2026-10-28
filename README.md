@@ -2,7 +2,9 @@
 
 Копия страницы [агерис.рф/audit](https://агерис.рф/audit/) в том виде, в каком она опубликована на сайте 28 октября 2026 года, с ускоренной загрузкой. На сайте страница работает на WordPress: тема `ageris`, шаблон `page-audit.php`, форма Contact Form 7 № 148.
 
-Просмотр: https://sokolnikovalex1975.github.io/ageris-audit-live/
+Просмотр: https://sokolnikovalex1975.github.io/ageris-29102026-v1/
+
+Версия `ageris-29102026-v1`. До 29.10.2026 репозиторий назывался `ageris-audit-live`.
 
 ## Версии
 
